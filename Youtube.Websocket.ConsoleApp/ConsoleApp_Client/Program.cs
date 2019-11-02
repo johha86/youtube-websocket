@@ -28,7 +28,7 @@ namespace ConsoleApp_Client
             //  if the web service was executed using http protocol from Visual Studio
             await client.ConnectAsync(new Uri("ws://localhost:57835/ws"), CancellationToken.None);
             //   uncomment the following lines if the web service was executed from consulo using 'dotnet run' command
-            //await client.ConnectAsync(new Uri("ws://localhost:50000/ws"), CancellationToken.None);
+            //await client.ConnectAsync(new Uri("ws://localhost:5000/ws"), CancellationToken.None);
 
             Console.WriteLine($"Connection web socket established @ {DateTime.UtcNow:F}");
             var send = Task.Run(
